@@ -1,4 +1,4 @@
-# Wallpaper Studio
+﻿# Multimon Wallpaper
 
 A tiny, portable multi-monitor wallpaper editor for Windows 10/11.
 
@@ -15,7 +15,7 @@ Lay out a different image on each monitor, **crop**, **zoom** and **move** them 
 
 ## Use it
 
-1. Download `WallpaperStudio.exe` from the [Releases](../../releases) page and run it. Windows SmartScreen may warn about an unsigned app: choose *More info > Run anyway*.
+1. Download `MultimonWallpaper.exe` from the [Releases](../../releases) page and run it. Windows SmartScreen may warn about an unsigned app: choose *More info > Run anyway*.
 2. **Add images...** and select one or more files.
 3. Pick the target monitor in the right-hand panel, then **Fill / Fit / Stretch / Center**.
 4. Adjust by dragging, scrolling, or toggling **Crop mode**.
@@ -42,7 +42,7 @@ Needs only Windows (the C# compiler in `C:\Windows\Microsoft.NET\Framework64\v4.
 .\build.ps1
 ```
 
-The result is `bin\WallpaperStudio.exe`.
+The result is `bin\MultimonWallpaper.exe`.
 
 ## License
 

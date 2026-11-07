@@ -80,7 +80,7 @@ namespace WallpaperApp
         {
             AutoScaleDimensions = new SizeF(96f, 96f);
             AutoScaleMode = AutoScaleMode.Dpi;
-            Text = "Wallpaper Studio";
+            Text = "Multimon Wallpaper";
             Font = new Font("Segoe UI", 9f);
             ClientSize = new Size(1240, 740);
             StartPosition = FormStartPosition.CenterScreen;

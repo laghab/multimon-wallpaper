@@ -1,4 +1,4 @@
-# Builds bin\WallpaperStudio.exe - a single portable file, no installer, no SDK needed.
+﻿# Builds bin\MultimonWallpaper.exe - a single portable file, no installer, no SDK needed.
 # Uses the C# compiler that ships with Windows (.NET Framework 4).
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
@@ -18,9 +18,9 @@ $icon = [System.Drawing.Icon]::FromHandle($bmp.GetHicon())
 $ico = "$root\bin\app.ico"
 $fs = [IO.File]::Create($ico); $icon.Save($fs); $fs.Close()
 
-& $csc /nologo /target:winexe /optimize+ /out:"$root\bin\WallpaperStudio.exe" `
+& $csc /nologo /target:winexe /optimize+ /out:"$root\bin\MultimonWallpaper.exe" `
     /win32icon:$ico /win32manifest:"$root\src\app.manifest" `
-    /reference:System.Windows.Forms.dll /reference:System.Drawing.dll "$root\src\WallpaperStudio.cs"
+    /reference:System.Windows.Forms.dll /reference:System.Drawing.dll "$root\src\MultimonWallpaper.cs"
 if ($LASTEXITCODE -ne 0) { throw 'Build failed' }
 [IO.File]::Delete($ico)
-"Built $root\bin\WallpaperStudio.exe"
+"Built $root\bin\MultimonWallpaper.exe"
